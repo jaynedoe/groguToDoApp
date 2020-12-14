@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="extensions/filter-control/bootstrap-table-filter-control.css">
+    <script src="extensions/filter-control/bootstrap-table-filter-control.js"></script>
+    <title>To Do App</title>
+  </head>
+  <body>
+
+      <div class="container" style="padding: 2%;">
+          <div class="row">
+            <div class="col">
+                <h1 class="display-2 mb-5">Hello Grogu!</h1>
+                <p class="lead mb-5">Welcome to 'Yet Another To Do App'.</p>
+            </div>
+          </div>
+ 
+        <!-- create form that takes in a to do item and prints it to the bottom of the screen when a button is clicked. -->
+        <div class="row jumbotron">
+            <div class="col-lg-6">
+
+                <form>
+                    
+                    <div class="mb-3">
+                        <label class="form-label text-info mr-3" for="todo-description">Description</label>
+                        <input class="form-control" type="text" name="todo-description" id="todo-description">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label text-info mr-3" for="todo-priority">Priority</label>
+                        <select class="form-select form-control" name="todo-priority" id="todo-priority">
+                            <option value="1">High</option>
+                            <option value="2">Medium</option>
+                            <option value="3">Low</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label text-info mr-3" for="complete-by">Complete By</label>
+                        <input class="form-control" type="date" name="complete-by" id="complete-by">
+                    </div>
+
+                    <button id="submit-btn" type="button" class="btn btn-info mt-4">Add Item To Do</button>
+                  </form> 
+            </div>
+        </div>
+     
+     
+      <div class="row">
+        <div class="col-sm-6">
+
+          <!-- append and remove table rows here -->
+
+          <table id="todo-table" class="table table-bordered table-hover mt-5">
+            <tbody>
+              <tr>
+                <th class="text-muted">Description</th>
+                <th class="text-muted">Priority</th>
+                <th class="text-muted">Complete By</th>
+                <th class="text-muted">Days To Complete</th>
+                <th class="text-muted">Complete?</th>
+              </tr>
+            </tbody>
+          </table>  
+
+          <button type="button" id="delete-check" class="btn btn-dark mt-4 ml-3">Delete Completed Items</button>
+  
+        </div>
+      </div>
+
+    </div>
+
+     <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="app.js"></script>     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    </script>
+
+  </body>
+</html>
