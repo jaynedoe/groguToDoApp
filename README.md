@@ -1,4 +1,4 @@
 # toDoApp
-To Do Web App - Add, delete and sort to do list items.
+To Do Web App - Add and delete to do list items.  Choose to do by date and priority level.  
 
 No server.
